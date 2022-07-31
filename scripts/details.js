@@ -18,7 +18,7 @@ var favList = JSON.parse(localStorage.getItem("favList")) === null
 fetch(`https://www.superheroapi.com/api.php/1953802511419258/${id}`)
     .then(res => res.json())
     .then(data => showDetails(data))
-    .catch(err => console.log(err));
+    .catch(err => console.log(err))
 
 
 //Render Superhero details
