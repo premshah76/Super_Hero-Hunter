@@ -164,7 +164,7 @@ inputName.onkeyup = function () {
     var name = inputName.value;
 
     if (name !== '') {
-        fetch('https://superheroapi.com/api.php/1953802511419258/search/' + name.trim())
+        fetch('https://www.superheroapi.com/api.php/1953802511419258/search/' + name.trim())
             .then(response => response.json())
             .then(data => {
                 createCard(data)
